@@ -24,83 +24,43 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <h1 class="site-align-c site-headline"><strong>How to find weekly, meaningful conversation in State College, PA.</strong><br><br></h1>
-                    <center><img src="assets/images/Paper_Cup.png" align="center"></center>
-                    <hr class="site-hr" />
+                    <h1 class="site-align-c site-headline"><strong>Twitter API Fixes, Complete Web Developer Udemy Course</strong><br><br></h1>
+                    <p>
+                        If you need somewhere to start in web development, look no further than <a>https://www.udemy.com/complete-web-developer-course/</a>. I've been cruising through this course whenever I have some free time, and recently I ran into some issues with it given how some of the information is now out of date (as is the nature of the Internet). <br>
+                    </p>
+                    <p>
+                        If you're experiencing problems in Section 9 - APIs with the Twitter API, that is because it has been upgraded since this video was created.
+                    </p>
 
-                    <p class="site-align-c"><strong>Does this sound familiar?</strong></p>
-                    <br />
+                    <p>
+                        Here is the code that I finally got to work after some visits to Stack Overflow:
+                    </p>
 
-                    <p>"Wow, cold day, huh?"</p>
+                    <img src="assets/images/codeBlock.png" style="width: 100%; margin: 0 auto;"></li>
 
-                    <p>"So... what do you do?"</p>
+                    <p>
+                        Notice that the syntax for the GET request is different in the updated API. Arguments are passed in as an array, not as URL encoded values. The TwitterOAuth library also has a few hundred more commits than it did when this video was created, so the location and name of some of the files has changed.
+                    </p>
 
-                    <p>"Did you see that cat video on Facebook?"</p>
-                    
-                    <br />
-                    <p class="site-align-c"><strong>Unfortunately, we had many conversations like this too, until recently.</strong></p>
-                    <p class="site-align-c"><strong>Now we have chats more like this:</strong></p>
-                    </br>
-                    
-                    <p>"Where would you go if you could book a one-way ticket to anywhere in the world?"</p>
+                    <p>
+                        Make sure that you have updated your hosting to PHP 5.5 as well, as the new library does not support lower versions of PHP and will throw out an error dealing with the '['  in line #334 if you try to use an older one.
+                    </p>
 
-                    <p>"What would you tell a 10-year-old version of yourself right now?"</p>
+                    <p>How to update PHP to PHP 5.5:</p>
 
-                    <p>"What's the thing you most want to do? How can you make that happen?"</p>
-                    
-                    <br />
-                    <p class="site-align-c"><strong>That's right: intentional, interesting conversation.</strong></p>
-                    <br />
-                    
-                    <p>There are people nearby who live for this type of talk, and we created Coffeestain so you can have it too.<br><br>
-                    Every week we'll pair you with a coffee (or tea) companion and provide a topic to prompt a lively interaction. Sometimes, we'll mix it up and host a group cocktail and appetizer hour (or two).<br><br>
+                    <ol>
+                        <li>Go to your CPANEL: http://cpanel.ecowebhosting.co.uk/.</li>
+                        <li>Select: "Switch PHP Version”<br>
+                        <img src="assets/images/cpanel.png" style="width: 100%; margin: 0 auto;"></li>
+                        <li>Click the drop down and select PHP 5.5</li>
+                    </ol>
 
-                    <p id="workPlease">And, for a brief period now, we're accepting new members. Want to connect with a cool local you should've met long ago? Apply below!</p>
-                    
-                    <div class="col-md-10 col-md-offset-1">
-                        <!-- Begin MailChimp Signup Form -->
-                        <div id="mc_embed_signup">
-                        <form action="//newleafinitiative.us2.list-manage.com/subscribe/post?u=17af15b18894109e6389f1981&amp;id=2273428523" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll">
-                            <h2></h2>
-                        <div class="mc-field-group">
-                            <label for="mce-FNAME">Name: </label>
-                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                        </div>
-                        <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email Address:</label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                        </div>
-                        <div class="mc-field-group">
-                            <label for="mce-MMERGE3">Three topics you're passionate about: </label>
-                            <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
-                        </div>
-                            <div id="mce-responses" class="clear">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_17af15b18894109e6389f1981_2273428523" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default"></div>
-                            </div>
-                        </form>
-                        </div>
+                    <p>
+                        That should take care of all of the errors you are seeing. If not, please tweet at me @spencemcc and I will help you troubleshoot it.
+                    </p>
 
-                        <!--End mc_embed_signup-->
-                    </div>
+
                 </div>
-            </div>
-            
-            </div>
-            </div>
-            <hr class="site-hr" />
-            <p class="site-align-c"><strong>We'll then send you your first coffee match within one week.</strong></p>
-            <hr class="site-hr" />
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <p></p>
-                    <p>Smiles guaranteed, coffee encouraged. </p> 
-                    <p><em><strong> - The Coffeestain Crew<strong></a></em>
-                    <br />
             </div>
         </div>
     </body>
